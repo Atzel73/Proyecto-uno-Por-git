@@ -31,24 +31,25 @@ public class Registro extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        eti1 = new javax.swing.JLabel();
+        eti2 = new javax.swing.JLabel();
+        eti6 = new javax.swing.JLabel();
         jComboBox1 = new javax.swing.JComboBox<>();
         BotonEn = new javax.swing.JButton();
         BotonFin = new javax.swing.JButton();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
+        eti3 = new javax.swing.JLabel();
+        eti4 = new javax.swing.JLabel();
         texto1 = new javax.swing.JTextField();
         texto2 = new javax.swing.JTextField();
         texto3 = new javax.swing.JTextField();
         texto4 = new javax.swing.JTextField();
         BotonBor = new javax.swing.JButton();
-        jLabel7 = new javax.swing.JLabel();
-        jCheckBox1 = new javax.swing.JCheckBox();
-        jCheckBox2 = new javax.swing.JCheckBox();
-        jLabel8 = new javax.swing.JLabel();
+        eti7 = new javax.swing.JLabel();
+        boxUn = new javax.swing.JCheckBox();
+        boxDos = new javax.swing.JCheckBox();
+        eti5 = new javax.swing.JLabel();
         jTextField2 = new javax.swing.JTextField();
+        Bott2 = new javax.swing.JButton();
 
         jLabel1.setText("jLabel1");
 
@@ -56,11 +57,11 @@ public class Registro extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel2.setText("Nombre");
+        eti1.setText("Nombre");
 
-        jLabel3.setText("Apellidos");
+        eti2.setText("Apellidos");
 
-        jLabel4.setText("Tipo de instrumento");
+        eti6.setText("Tipo de instrumento");
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Viento", "Cuerda", "Percusion", "Electrofono", "Idiofono" }));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
@@ -83,9 +84,9 @@ public class Registro extends javax.swing.JFrame {
             }
         });
 
-        jLabel5.setText("Correo electronico");
+        eti3.setText("Correo electronico");
 
-        jLabel6.setText("Numero de telefono");
+        eti4.setText("Numero de telefono");
 
         texto1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -106,23 +107,30 @@ public class Registro extends javax.swing.JFrame {
             }
         });
 
-        jLabel7.setText("¿Tienes experiencia con los instrumentos?");
+        eti7.setText("¿Tienes experiencia con los instrumentos?");
 
-        jCheckBox1.setText("Sí");
-        jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
+        boxUn.setText("Sí");
+        boxUn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox1ActionPerformed(evt);
+                boxUnActionPerformed(evt);
             }
         });
 
-        jCheckBox2.setText("No");
-        jCheckBox2.addActionListener(new java.awt.event.ActionListener() {
+        boxDos.setText("No");
+        boxDos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox2ActionPerformed(evt);
+                boxDosActionPerformed(evt);
             }
         });
 
-        jLabel8.setText("Dirección de casa");
+        eti5.setText("Dirección de casa");
+
+        Bott2.setText("Editar registro");
+        Bott2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Bott2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -140,26 +148,29 @@ public class Registro extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(eti2, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(eti1, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(texto1, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(texto2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(texto2, javax.swing.GroupLayout.DEFAULT_SIZE, 60, Short.MAX_VALUE)
+                            .addComponent(texto1))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel6)
+                                .addComponent(eti4)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(texto4, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel5)
+                                .addComponent(eti3)
                                 .addGap(18, 18, 18)
                                 .addComponent(texto3, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(jLabel8)
-                                .addGap(18, 18, 18)
-                                .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(Bott2)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(eti5)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -167,14 +178,14 @@ public class Registro extends javax.swing.JFrame {
                                 .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                     .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jCheckBox1))
+                                    .addComponent(boxUn))
                                 .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                    .addComponent(jLabel4)
+                                    .addComponent(eti6)
                                     .addGap(18, 18, 18)
-                                    .addComponent(jLabel7)))
+                                    .addComponent(eti7)))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(280, 280, 280)
-                                .addComponent(jCheckBox2)))))
+                                .addComponent(boxDos)))))
                 .addGap(30, 30, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -184,37 +195,38 @@ public class Registro extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(16, 16, 16)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel2)
+                            .addComponent(eti1)
                             .addComponent(texto1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(eti3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(texto3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel8)
+                            .addComponent(eti5)
                             .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel6)
+                    .addComponent(eti2)
+                    .addComponent(eti4)
                     .addComponent(texto2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(texto4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel7))
+                    .addComponent(eti6)
+                    .addComponent(eti7))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jCheckBox1))
+                    .addComponent(boxUn))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jCheckBox2)
+                .addComponent(boxDos)
                 .addGap(95, 95, 95)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(BotonEn)
                     .addComponent(BotonFin)
-                    .addComponent(BotonBor))
+                    .addComponent(BotonBor)
+                    .addComponent(Bott2))
                 .addGap(33, 33, 33))
         );
 
@@ -226,7 +238,7 @@ public class Registro extends javax.swing.JFrame {
     }//GEN-LAST:event_jComboBox1ActionPerformed
 
     private void BotonEnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonEnActionPerformed
-        JOptionPane.showMessageDialog(null, "Tus datos han sido registrados correctamente");
+        JOptionPane.showMessageDialog(null, "Tus datos han sido guardados correctamente");
         texto1.setText("");
         texto2.setText("");
         texto3.setText("");
@@ -252,13 +264,18 @@ public class Registro extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_texto1ActionPerformed
 
-    private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
+    private void boxUnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boxUnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jCheckBox1ActionPerformed
+    }//GEN-LAST:event_boxUnActionPerformed
 
-    private void jCheckBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox2ActionPerformed
+    private void boxDosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boxDosActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jCheckBox2ActionPerformed
+    }//GEN-LAST:event_boxDosActionPerformed
+
+    private void Bott2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bott2ActionPerformed
+         edicion Bott2= new edicion();
+        Bott2.setVisible(true);
+    }//GEN-LAST:event_Bott2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -299,17 +316,18 @@ public class Registro extends javax.swing.JFrame {
     private javax.swing.JButton BotonBor;
     private javax.swing.JButton BotonEn;
     private javax.swing.JButton BotonFin;
-    private javax.swing.JCheckBox jCheckBox1;
-    private javax.swing.JCheckBox jCheckBox2;
+    private javax.swing.JButton Bott2;
+    private javax.swing.JCheckBox boxDos;
+    private javax.swing.JCheckBox boxUn;
+    private javax.swing.JLabel eti1;
+    private javax.swing.JLabel eti2;
+    private javax.swing.JLabel eti3;
+    private javax.swing.JLabel eti4;
+    private javax.swing.JLabel eti5;
+    private javax.swing.JLabel eti6;
+    private javax.swing.JLabel eti7;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField texto1;
