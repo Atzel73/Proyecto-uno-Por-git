@@ -39,7 +39,6 @@ public class Registro extends javax.swing.JFrame {
         BotonFin = new javax.swing.JButton();
         eti3 = new javax.swing.JLabel();
         eti4 = new javax.swing.JLabel();
-        texto1 = new javax.swing.JTextField();
         texto2 = new javax.swing.JTextField();
         texto3 = new javax.swing.JTextField();
         texto4 = new javax.swing.JTextField();
@@ -48,8 +47,10 @@ public class Registro extends javax.swing.JFrame {
         boxUn = new javax.swing.JCheckBox();
         boxDos = new javax.swing.JCheckBox();
         eti5 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
+        texto5 = new javax.swing.JTextField();
         Bott2 = new javax.swing.JButton();
+        texto1 = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
 
         jLabel1.setText("jLabel1");
 
@@ -57,12 +58,19 @@ public class Registro extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        eti1.setFont(new java.awt.Font("Tw Cen MT", 0, 11)); // NOI18N
+        eti1.setForeground(new java.awt.Color(0, 0, 204));
         eti1.setText("Nombre");
 
+        eti2.setFont(new java.awt.Font("Tw Cen MT", 0, 11)); // NOI18N
+        eti2.setForeground(new java.awt.Color(0, 51, 153));
         eti2.setText("Apellidos");
 
+        eti6.setFont(new java.awt.Font("Trebuchet MS", 0, 11)); // NOI18N
+        eti6.setForeground(new java.awt.Color(51, 0, 204));
         eti6.setText("Tipo de instrumento");
 
+        jComboBox1.setBackground(new java.awt.Color(204, 204, 255));
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Viento", "Cuerda", "Percusion", "Electrofono", "Idiofono" }));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -70,6 +78,9 @@ public class Registro extends javax.swing.JFrame {
             }
         });
 
+        BotonEn.setBackground(new java.awt.Color(255, 255, 255));
+        BotonEn.setFont(new java.awt.Font("Tw Cen MT", 0, 11)); // NOI18N
+        BotonEn.setForeground(new java.awt.Color(102, 0, 255));
         BotonEn.setText("Enviar");
         BotonEn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -77,6 +88,9 @@ public class Registro extends javax.swing.JFrame {
             }
         });
 
+        BotonFin.setBackground(new java.awt.Color(255, 255, 255));
+        BotonFin.setFont(new java.awt.Font("Tw Cen MT", 0, 11)); // NOI18N
+        BotonFin.setForeground(new java.awt.Color(102, 0, 255));
         BotonFin.setText("Terminar");
         BotonFin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -88,18 +102,20 @@ public class Registro extends javax.swing.JFrame {
 
         eti4.setText("Numero de telefono");
 
-        texto1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                texto1ActionPerformed(evt);
-            }
-        });
+        texto2.setBackground(new java.awt.Color(204, 204, 255));
 
+        texto3.setBackground(new java.awt.Color(204, 204, 255));
+
+        texto4.setBackground(new java.awt.Color(204, 204, 255));
         texto4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 texto4ActionPerformed(evt);
             }
         });
 
+        BotonBor.setBackground(new java.awt.Color(255, 255, 255));
+        BotonBor.setFont(new java.awt.Font("Tw Cen MT", 0, 11)); // NOI18N
+        BotonBor.setForeground(new java.awt.Color(102, 0, 255));
         BotonBor.setText("Eliminar registros");
         BotonBor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -107,8 +123,11 @@ public class Registro extends javax.swing.JFrame {
             }
         });
 
+        eti7.setFont(new java.awt.Font("Trebuchet MS", 0, 11)); // NOI18N
+        eti7.setForeground(new java.awt.Color(0, 51, 204));
         eti7.setText("¿Tienes experiencia con los instrumentos?");
 
+        boxUn.setBackground(new java.awt.Color(204, 204, 255));
         boxUn.setText("Sí");
         boxUn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -116,6 +135,7 @@ public class Registro extends javax.swing.JFrame {
             }
         });
 
+        boxDos.setBackground(new java.awt.Color(204, 204, 255));
         boxDos.setText("No");
         boxDos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -125,12 +145,21 @@ public class Registro extends javax.swing.JFrame {
 
         eti5.setText("Dirección de casa");
 
+        texto5.setBackground(new java.awt.Color(204, 204, 255));
+
+        Bott2.setBackground(new java.awt.Color(255, 255, 255));
+        Bott2.setFont(new java.awt.Font("Tw Cen MT", 0, 11)); // NOI18N
+        Bott2.setForeground(new java.awt.Color(102, 0, 255));
         Bott2.setText("Editar registro");
         Bott2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Bott2ActionPerformed(evt);
             }
         });
+
+        texto1.setBackground(new java.awt.Color(204, 204, 255));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon("e:\\Users\\Propietario\\Downloads\\mioda.jfif")); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -139,95 +168,94 @@ public class Registro extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(25, 25, 25)
-                        .addComponent(BotonEn)
-                        .addGap(18, 18, 18)
-                        .addComponent(BotonFin)
-                        .addGap(26, 26, 26)
-                        .addComponent(BotonBor))
-                    .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(eti2, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(eti1, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(texto2, javax.swing.GroupLayout.DEFAULT_SIZE, 60, Short.MAX_VALUE)
-                            .addComponent(texto1))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(eti4)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(texto4, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(eti3)
-                                .addGap(18, 18, 18)
-                                .addComponent(texto3, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(eti2, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(eti1, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addComponent(texto2, javax.swing.GroupLayout.DEFAULT_SIZE, 60, Short.MAX_VALUE)
+                                            .addComponent(texto1)))
+                                    .addComponent(boxUn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(18, 18, 18)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(Bott2)
                                     .addGroup(layout.createSequentialGroup()
+                                        .addComponent(eti3)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(texto3, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
                                         .addComponent(eti5)
                                         .addGap(18, 18, 18)
-                                        .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                                        .addComponent(texto5, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(eti4)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(texto4, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(70, 70, 70)
+                                        .addComponent(jLabel3))))
+                            .addComponent(eti6)
+                            .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(boxDos)
+                                .addComponent(eti7, javax.swing.GroupLayout.Alignment.LEADING))))
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(boxUn))
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                    .addComponent(eti6)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(eti7)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(280, 280, 280)
-                                .addComponent(boxDos)))))
-                .addGap(30, 30, Short.MAX_VALUE))
+                        .addGap(23, 23, 23)
+                        .addComponent(BotonEn)
+                        .addGap(32, 32, 32)
+                        .addComponent(BotonFin)
+                        .addGap(18, 18, 18)
+                        .addComponent(BotonBor)
+                        .addGap(18, 18, 18)
+                        .addComponent(Bott2)))
+                .addContainerGap(131, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(16, 16, 16)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(eti1)
                             .addComponent(texto1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(eti2)
+                            .addComponent(eti4)
+                            .addComponent(texto2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(texto4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addComponent(eti6)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(25, 25, 25)
+                        .addComponent(eti7)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(boxUn)
+                            .addComponent(boxDos))
+                        .addGap(144, 144, 144))
+                    .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(eti3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(texto3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(eti5)
-                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(texto5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 308, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(eti2)
-                    .addComponent(eti4)
-                    .addComponent(texto2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(texto4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(eti6)
-                    .addComponent(eti7))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(boxUn))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(boxDos)
-                .addGap(95, 95, 95)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(BotonEn)
                     .addComponent(BotonFin)
                     .addComponent(BotonBor)
                     .addComponent(Bott2))
-                .addGap(33, 33, 33))
+                .addGap(325, 325, 325))
         );
 
         pack();
@@ -254,15 +282,12 @@ public class Registro extends javax.swing.JFrame {
         texto2.setText("");
         texto3.setText("");
         texto4.setText("");
+        texto5.setText("");
     }//GEN-LAST:event_BotonBorActionPerformed
 
     private void BotonFinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonFinActionPerformed
        System.exit(0);
     }//GEN-LAST:event_BotonFinActionPerformed
-
-    private void texto1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_texto1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_texto1ActionPerformed
 
     private void boxUnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boxUnActionPerformed
         // TODO add your handling code here:
@@ -328,11 +353,12 @@ public class Registro extends javax.swing.JFrame {
     private javax.swing.JLabel eti7;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField texto1;
     private javax.swing.JTextField texto2;
     private javax.swing.JTextField texto3;
     private javax.swing.JTextField texto4;
+    private javax.swing.JTextField texto5;
     // End of variables declaration//GEN-END:variables
 }
