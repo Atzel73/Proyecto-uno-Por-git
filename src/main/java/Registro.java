@@ -98,8 +98,10 @@ public class Registro extends javax.swing.JFrame {
             }
         });
 
+        eti3.setForeground(new java.awt.Color(0, 0, 204));
         eti3.setText("Correo electronico");
 
+        eti4.setForeground(new java.awt.Color(0, 0, 204));
         eti4.setText("Numero de telefono");
 
         texto2.setBackground(new java.awt.Color(204, 204, 255));
@@ -143,6 +145,7 @@ public class Registro extends javax.swing.JFrame {
             }
         });
 
+        eti5.setForeground(new java.awt.Color(0, 0, 204));
         eti5.setText("Dirección de casa");
 
         texto5.setBackground(new java.awt.Color(204, 204, 255));
@@ -247,8 +250,7 @@ public class Registro extends javax.swing.JFrame {
                             .addComponent(eti5)
                             .addComponent(texto5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 308, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
+                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 308, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(BotonEn)
