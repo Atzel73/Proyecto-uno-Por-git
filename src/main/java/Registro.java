@@ -51,6 +51,7 @@ public class Registro extends javax.swing.JFrame {
         Bott2 = new javax.swing.JButton();
         texto1 = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
+        testo1 = new javax.swing.JTextField();
 
         jLabel1.setText("jLabel1");
 
@@ -164,6 +165,8 @@ public class Registro extends javax.swing.JFrame {
 
         jLabel3.setIcon(new javax.swing.ImageIcon("e:\\Users\\Propietario\\Downloads\\mioda.jfif")); // NOI18N
 
+        testo1.setBackground(new java.awt.Color(204, 204, 255));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -182,7 +185,7 @@ public class Registro extends javax.swing.JFrame {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                             .addComponent(texto2, javax.swing.GroupLayout.DEFAULT_SIZE, 60, Short.MAX_VALUE)
-                                            .addComponent(texto1)))
+                                            .addComponent(testo1)))
                                     .addComponent(boxUn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(18, 18, 18)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -195,6 +198,8 @@ public class Registro extends javax.swing.JFrame {
                                         .addGap(18, 18, 18)
                                         .addComponent(texto5, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(layout.createSequentialGroup()
+                                        .addComponent(texto1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(eti4)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addComponent(texto4, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -214,7 +219,7 @@ public class Registro extends javax.swing.JFrame {
                         .addComponent(BotonBor)
                         .addGap(18, 18, 18)
                         .addComponent(Bott2)))
-                .addContainerGap(131, Short.MAX_VALUE))
+                .addContainerGap(67, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -224,13 +229,14 @@ public class Registro extends javax.swing.JFrame {
                         .addGap(16, 16, 16)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(eti1)
-                            .addComponent(texto1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(testo1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(eti2)
                             .addComponent(eti4)
                             .addComponent(texto2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(texto4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(texto4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(texto1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addComponent(eti6)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -256,8 +262,7 @@ public class Registro extends javax.swing.JFrame {
                     .addComponent(BotonEn)
                     .addComponent(BotonFin)
                     .addComponent(BotonBor)
-                    .addComponent(Bott2))
-                .addGap(325, 325, 325))
+                    .addComponent(Bott2)))
         );
 
         pack();
@@ -280,7 +285,7 @@ public class Registro extends javax.swing.JFrame {
     }//GEN-LAST:event_texto4ActionPerformed
 
     private void BotonBorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonBorActionPerformed
-        texto1.setText("");
+        testo1.setText("");
         texto2.setText("");
         texto3.setText("");
         texto4.setText("");
@@ -357,6 +362,7 @@ public class Registro extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField testo1;
     private javax.swing.JTextField texto1;
     private javax.swing.JTextField texto2;
     private javax.swing.JTextField texto3;
