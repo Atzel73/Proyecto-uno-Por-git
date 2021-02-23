@@ -49,7 +49,6 @@ public class Registro extends javax.swing.JFrame {
         eti5 = new javax.swing.JLabel();
         texto5 = new javax.swing.JTextField();
         Bott2 = new javax.swing.JButton();
-        texto1 = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         testo1 = new javax.swing.JTextField();
 
@@ -161,8 +160,6 @@ public class Registro extends javax.swing.JFrame {
             }
         });
 
-        texto1.setBackground(new java.awt.Color(204, 204, 255));
-
         jLabel3.setIcon(new javax.swing.ImageIcon("e:\\Users\\Propietario\\Downloads\\mioda.jfif")); // NOI18N
 
         testo1.setBackground(new java.awt.Color(204, 204, 255));
@@ -198,8 +195,7 @@ public class Registro extends javax.swing.JFrame {
                                         .addGap(18, 18, 18)
                                         .addComponent(texto5, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(texto1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGap(64, 64, 64)
                                         .addComponent(eti4)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addComponent(texto4, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -235,8 +231,7 @@ public class Registro extends javax.swing.JFrame {
                             .addComponent(eti2)
                             .addComponent(eti4)
                             .addComponent(texto2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(texto4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(texto1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(texto4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addComponent(eti6)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -274,7 +269,7 @@ public class Registro extends javax.swing.JFrame {
 
     private void BotonEnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonEnActionPerformed
         JOptionPane.showMessageDialog(null, "Tus datos han sido guardados correctamente");
-        texto1.setText("");
+        testo1.setText("");
         texto2.setText("");
         texto3.setText("");
         texto4.setText("");
@@ -363,7 +358,6 @@ public class Registro extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField testo1;
-    private javax.swing.JTextField texto1;
     private javax.swing.JTextField texto2;
     private javax.swing.JTextField texto3;
     private javax.swing.JTextField texto4;
